@@ -7,7 +7,7 @@ if (typeof window !== 'undefined') {
 
 function fill (name) {
 	if (__global[name]) {
-		return __global[name]
+		return __global[name].bind(__global)
 	}
 }
 
