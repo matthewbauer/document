@@ -5,7 +5,7 @@ if (typeof window !== 'undefined') {
 	__global = {}
 }
 
-import 'document-register-element'
+import 'webcomponentsjs'
 
 function fill (name) {
 	if (__global[name]) {
