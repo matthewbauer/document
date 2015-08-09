@@ -5,6 +5,8 @@ if (typeof window !== 'undefined') {
 	__global = {}
 }
 
+import 'document-register-element'
+
 function fill (name) {
 	if (__global[name]) {
 		return __global[name].bind(__global)
